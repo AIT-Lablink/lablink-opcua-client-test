@@ -28,7 +28,7 @@ You need to have the following software installed for running this setup:
    tested with [Python 3.8.5](https://www.python.org/downloads/release/python-385/)
 
 Make sure that the ``JAVA_HOME`` environment variable is set and points to your JDK installation:
-  * open the system properties (``WinKey`` + ``Pause`` or go to *Settings* &#8594 *System* => *About* => *System Info* => *Advanced System Settings*)
+  * open the system properties (``WinKey`` + ``Pause`` or go to *Settings* => *System* => *About* => *System Info* => *Advanced System Settings*)
   * select the *Advanced* tab, then the *Environment Variables* button
   * select and edit the ``JAVA_HOME`` variable in the user variables, e.g., adding *C:\\Program Files\\Java\\jdk-13.0.2*.
 
@@ -36,17 +36,17 @@ Make sure that the ``JAVA_HOME`` environment variable is set and points to your 
 
 ### Lablink packages download
 
-All required Lablink packages are listed as dependencies in file ``pom.xml`` (a [Maven](https://maven.apache.org/ project configuration file).
+All required Lablink packages are listed as dependencies in file ``pom.xml`` (a [Maven](https://maven.apache.org/) project configuration file).
 To download all required Lablink packages, open the command prompt, change to the project's root directory and type:
-```batch
+```
   mvnw package
 ```
 
 ### OPC UA server installation
 
 This setup uses a simple OPC UA server, implemented using the [FreeOpcUa Python library](https://freeopcua.github.io/).
-To install all required Python dependencies, open the command prompt, change to the project subdirectory ``setup\\1_opcua_server`` and type:
-```batch
+To install all required Python dependencies, open the command prompt, change to the project subdirectory [``setup\1_opcua_server``](./setup/1_opcua_server) and type:
+```
   pip install -r requirements.txt
 ```
 
@@ -54,16 +54,16 @@ To install all required Python dependencies, open the command prompt, change to 
 
 ### Step 1: Starting the OPC UA server
 
-To start the OPC UA server, open the command prompt, change to the project subdirectory ``setup\\1_opcua_server`` and type:
+To start the OPC UA server, open the command prompt, change to the project subdirectory [``setup\1_opcua_server``](./setup/1_opcua_server) and type:
 ```batch
   python test-opcua-server.py
 ```
 
 ### Step 2: Starting the Lablink config server
 
-The configuration for all Lablink clients (incl. the CSV data for the CSV client) is contained in file ``setup\\2_lablink_config\\opcua-client-test-config.db``.
-To start the Lablink config server, simply **double-click batch script** ``setup\\2_lablink_config\\run_config.cmd``.
-Alternatively, you can open a new command prompt, change to the project subdirectory ``setup\\2_lablink_config`` and type:
+The configuration for all Lablink clients (incl. the CSV data for the CSV client) is contained in file [``setup\2_lablink_config\opcua-client-test-config.db``](./setup/2_lablink_config/opcua-client-test-config.db).
+To start the Lablink config server, simply **double-click batch script** [``setup\2_lablink_config\run_config.cmd``](./setup/2_lablink_config/run_config.cmd).
+Alternatively, you can open a new command prompt, change to the project subdirectory [``setup\2_lablink_config``](./setup/2_lablink_config) and type:
 
 **NOTE**:
 Once the server is running, you can view the available configurations in a web browser via [http://localhost:10101](http://localhost:10101).
@@ -73,15 +73,15 @@ A convenient tool for viewing the content of the database file (and editing it f
 
 ### Running the Lablink clients
 
-All batch scripts for running the Lablink clients can be found in project subdirectory ``setup\\3_run_test``:
+All batch scripts for running the Lablink clients can be found in project subdirectory [``setup\3_run_test``](./setup/3_run_test):
 
- * **OPC UA client**: ``opcua-client.cmd``
- * **CSV client**: ``csv-client.cmd``
- * **Plotter**: ``plot.cmd``
- * **Data point bridge**: ``dpb.cmd``
+ * **OPC UA client**: [``opcua-client.cmd``](./setup/3_run_test/opcua-client.cmd)
+ * **CSV client**: [``csv-client.cmd``](./setup/3_run_test/csv-client.cmd)
+ * **Plotter**: [``plot.cmd``](./setup/3_run_test/plot.cmd)
+ * **Data point bridge**: [``dpb.cmd``](./setup/3_run_test/dpb.cmd)
 
 To start the Lablink clients, simply **double-click** the corresponding **batch scripts**.
-Alternatively, you can open a new command prompt for each, change to the project subdirectory ``setup\\3_run_test`` and type the script name.
+Alternatively, you can open a new command prompt for each, change to the project subdirectory [``setup\3_run_test``](./setup/3_run_test) and type the script name.
 
 **NOTE**:
 You can start the Lablink clients in arbitrary order.
