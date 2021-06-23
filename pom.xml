@@ -58,16 +58,6 @@
 
   </properties>
 
-  <repositories>
-
-    <repository>
-      <id>github</id>
-      <name>GitHub AIT-Lablink Apache Maven Packages</name>
-      <url>https://maven.pkg.github.com/ait-lablink/lablink-core-java</url>
-    </repository>
-
-  </repositories>
-
   <build>
 
     <plugins>
