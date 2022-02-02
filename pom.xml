@@ -5,7 +5,7 @@
 
   <groupId>at.ac.ait.lablink.setup</groupId>
   <artifactId>opcua-client-test</artifactId>
-  <version>0.0.1</version>
+  <version>0.0.2</version>
   <url>https://gitlab-intern.ait.ac.at/ies/digitalenergytestbed/lablink-opcua-client-test</url>
 
   <dependencies>
@@ -13,7 +13,7 @@
     <dependency>
       <groupId>at.ac.ait.lablink.clients</groupId>
       <artifactId>opcuaclient</artifactId>
-      <version>0.0.2</version>
+      <version>0.0.3</version>
       <classifier>jar-with-dependencies</classifier>
       <scope>provided</scope>
     </dependency>
@@ -21,7 +21,7 @@
     <dependency>
       <groupId>at.ac.ait.lablink.clients</groupId>
       <artifactId>csvclient</artifactId>
-      <version>0.0.1</version>
+      <version>0.0.2</version>
       <classifier>jar-with-dependencies</classifier>
       <scope>provided</scope>
     </dependency>
@@ -29,7 +29,7 @@
     <dependency>
       <groupId>at.ac.ait.lablink.clients</groupId>
       <artifactId>plotter</artifactId>
-      <version>0.0.2</version>
+      <version>0.0.4</version>
       <classifier>jar-with-dependencies</classifier>
       <scope>provided</scope>
     </dependency>
@@ -37,7 +37,7 @@
     <dependency>
       <groupId>at.ac.ait.lablink</groupId>
       <artifactId>config</artifactId>
-      <version>0.1.0</version>
+      <version>0.1.1</version>
       <classifier>jar-with-dependencies</classifier>
       <scope>provided</scope>
     </dependency>
@@ -45,7 +45,7 @@
     <dependency>
       <groupId>at.ac.ait.lablink.clients</groupId>
       <artifactId>dpbridge</artifactId>
-      <version>0.0.1</version>
+      <version>0.0.2</version>
       <classifier>jar-with-dependencies</classifier>
       <scope>provided</scope>
     </dependency>
